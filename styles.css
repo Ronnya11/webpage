@@ -1,0 +1,42 @@
+#title-name {
+    text-align:center;
+}
+
+.nav-bar {
+    text-align:center;
+    font-size:x-large;
+    color:black;
+}
+
+html {
+    background-color:darkgray;   
+}
+
+#about {
+    padding: 20px;
+    color:black;
+    
+}
+
+#projects {
+    padding: 20px;
+    color:black;
+}
+
+#contact {
+    padding: 20px;
+    color:black;
+}
+
+#ronsengan {
+    position: absolute;
+    top: 140px;     /* Adjust as needed */
+    left: 20px;     /* Adjust as needed */
+    width: 200px;
+    height: 250px;
+}
+
+#bio {
+    font: italic bold 15px Arial, sans-serif;
+    margin-left: 250px;  /* Push text away from photo area */
+}
