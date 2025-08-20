@@ -1,53 +1,70 @@
-#title-name {
-    text-align:center;
+html {
+    background-color: #f5f5f5;
+    scroll-behavior: smooth;
 }
+
+#title-name {
+    text-align: center;
+    white-space: nowrap;
+    font-size: 40px;  /* Make it smaller so it fits */
+}
+
+
 
 .nav-bar {
-    text-align:center;
-    font-size:x-large;
-    color:black;
+    text-align: center;
+    font-size: x-large;
+    color: black;
 }
 
+.nav-bar a {
+    display: inline-block;  /* This helps with centering */
+    padding: 10px 20px;
+    margin: 0 10px;
+    text-decoration: none;
+    color: black;
+}
+
+
 html {
-    background-color:#f5f5f5;   
+    background-color: #f5f5f5;   
 }
 
 #about {
     padding: 20px;
-    color:black;
-    
+    color: black;
 }
 
-.about-container{
-    display:flex;
+.about-container {
+    display: flex;
     gap: 30px;
+    align-items: center;  /* Centers image and text vertically */
+    max-width: 800px;     /* Limits the overall width */
+    margin: 0 auto;       /* Centers the whole container */
+    padding: 40px 20px;
 }
 
 #projects {
     padding: 20px;
-    color:black;
-}
-
-#contact {
-    padding: 20px;
-    color:black;
+    color: black;
 }
 
 #ronsengan {
-     width: 200px;
-     height: 250px;
+    width: 200px;
+    height: 250px;
 }
 
 #bio {
-    font: italic bold 15px Arial, sans-serif;
-    
+    font: 16px Arial, sans-serif;
+    line-height: 1.6;     /* Better line spacing for readability */
+    text-align: left;     /* Keep text left-aligned for easier reading */
 }
 
 .intro-line {
     font-size: 32px;
     font-weight: bold;
     color: #333;
-    display:block;
+    display: block;
     margin-bottom: 15px;
 }
 
@@ -78,31 +95,16 @@ html {
     box-shadow: 0 4px 15px rgba(0,0,0,0.1);
     max-width: 350px;
     flex: 1;
-    transition: all 0.3s ease; /* this makes the hover smooth */
+    transition: all 0.3s ease;
     cursor: pointer;
 }
 
-.project-card {
-    background: white;
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-    max-width: 350px;
-    flex: 1;
-    transition: all 0.3s ease;  /* This makes the hover smooth */
-    cursor: pointer;            /* Shows it's interactive */
-}
-
 .project-card:hover {
-    transform: translateY(-10px);           /* Lifts the card up 10px */
-    box-shadow: 0 8px 25px rgba(0,0,0,0.15); /* Stronger shadow */
+    transform: translateY(-10px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
 }
 
-#contact {
-    background: white;
-    padding: 60px 20px;
-    margin-top: 60px;
-}
+
 
 #contact h2 {
     font-size: 36px;
@@ -128,4 +130,53 @@ html {
 
 .contact-form {
     flex: 1;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #333;
+    outline: none;
+}
+
+.contact-form button {
+    background: #333;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.contact-links {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contact-link {
+    background: #333;
+    color: white;
+    padding: 15px 25px;
+    text-decoration: none;
+    border-radius: 8px;
+    text-align: center;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.contact-link:hover {
+    background: #555;
+    transform: translateY(-3px);
 }
